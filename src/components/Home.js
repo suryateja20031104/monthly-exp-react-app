@@ -21,7 +21,7 @@ const Home = () => {
     }
 
     try {
-      const res = await axios.patch(`http://localhost:5000/updateExpenditure`, {
+      const res = await axios.patch(`https://monthly-exp-backend.onrender.com/updateExpenditure`, {
         year,
         month,
         date,
