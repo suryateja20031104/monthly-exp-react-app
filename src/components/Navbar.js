@@ -5,7 +5,9 @@ const Navbar = () => {
         <>
             <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="/">Navbar</Link>
+                    <Link className="navbar-brand" to="/">
+                        <img src="https://www.shutterstock.com/image-vector/vector-abstract-line-art-book-600nw-2472789681.jpg" style={{ width: "45px", height: "45px", objectFit: "cover" }}  alt="no-img"/>
+                    </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
