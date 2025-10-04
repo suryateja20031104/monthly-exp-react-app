@@ -31,7 +31,7 @@ const MonthGraph = () => {
     const [year, monthNumber] = month.split("-");
 
     try {
-      const res = await fetch(`https://monthly-exp-backend.onrender.com/${monthNumber}/${year}`);
+      const res = await fetch(`https://monthly-exp-backend.onrender.com/getMonthly/${monthNumber}/${year}`);
       const result = await res.json();
 
       if (res.ok && result.data && Object.keys(result.data).length > 0) {
